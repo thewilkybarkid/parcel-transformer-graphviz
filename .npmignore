@@ -1,0 +1,5 @@
+/.github/
+/.husky/
+/.commitlintrc.json
+/.eslintrc.json
+/.prettierrc
