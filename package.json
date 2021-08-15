@@ -2,6 +2,25 @@
   "name": "parcel-transformer-graphviz",
   "license": "MIT",
   "repository": "github:thewilkybarkid/parcel-transformer-graphviz",
+  "keywords": [
+    "parcel",
+    "transformer",
+    "graphviz",
+    "dot",
+    "svg"
+  ],
+  "main": "index.js",
+  "targets": {
+    "main": false
+  },
+  "engines": {
+    "node": ">=14",
+    "parcel": "^2.0.0-rc.0"
+  },
+  "dependencies": {
+    "@hpcc-js/wasm": "^1.10.3",
+    "@parcel/plugin": "^2.0.0-rc.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
