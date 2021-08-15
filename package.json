@@ -1,0 +1,13 @@
+{
+  "name": "parcel-transformer-graphviz",
+  "license": "MIT",
+  "repository": "github:thewilkybarkid/parcel-transformer-graphviz",
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "husky": "^7.0.1"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
