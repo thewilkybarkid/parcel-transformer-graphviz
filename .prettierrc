@@ -3,5 +3,11 @@
   "printWidth": 120,
   "semi": false,
   "singleQuote": true,
-  "trailingComma": "all"
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": ".parcelrc",
+      "options": { "parser": "json" }
+    }
+  ]
 }

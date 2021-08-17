@@ -26,12 +26,18 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "bats": "^1.4.1",
+    "bats-assert": "^2.0.0",
+    "bats-support": "^0.3.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.1",
+    "image-size": "^1.0.0",
     "prettier": "^2.3.2",
+    "prettier-plugin-dot": "^0.2.0",
     "prettier-plugin-sh": "^0.7.1",
-    "standard-version": "^9.3.1"
+    "standard-version": "^9.3.1",
+    "strip-ansi-cli": "^3.0.1"
   },
   "scripts": {
     "format": "prettier --ignore-unknown --check '**'",
@@ -39,6 +45,7 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
-    "release": "standard-version --sign"
+    "release": "standard-version --sign",
+    "test": "bats test"
   }
 }

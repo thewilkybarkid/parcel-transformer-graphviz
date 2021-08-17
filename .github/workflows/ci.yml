@@ -42,3 +42,29 @@ jobs:
 
       - name: 'Run lint'
         run: npm run lint
+
+  test:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node:
+          - 14
+          - 16
+
+    steps:
+      - name: 'Checkout code'
+        uses: actions/checkout@v2
+
+      - name: 'Set up Node.js'
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 'Install dependencies'
+        run: npm ci
+
+      - name: 'Install test project dependencies'
+        run: npm --prefix test/project ci
+
+      - name: 'Run tests'
+        run: npm run test
