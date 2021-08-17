@@ -30,10 +30,11 @@
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.1",
     "prettier": "^2.3.2",
+    "prettier-plugin-sh": "^0.7.1",
     "standard-version": "^9.3.1"
   },
   "scripts": {
-    "format": "prettier --check .",
+    "format": "prettier --ignore-unknown --check '**'",
     "format:fix": "npm run format -- --write",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
