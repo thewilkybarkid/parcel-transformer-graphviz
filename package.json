@@ -12,9 +12,6 @@
     "svg"
   ],
   "main": "index.js",
-  "targets": {
-    "main": false
-  },
   "engines": {
     "node": ">=14",
     "parcel": "^2.0.0-rc.0"
