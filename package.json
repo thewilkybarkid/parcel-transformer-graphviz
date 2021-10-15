@@ -34,7 +34,7 @@
     "prettier-plugin-dot": "^0.3.0",
     "prettier-plugin-sh": "^0.7.1",
     "standard-version": "^9.3.1",
-    "strip-ansi-cli": "^3.0.1"
+    "strip-ansi-cli": "^3.0.2"
   },
   "scripts": {
     "format": "prettier --ignore-unknown --check '**'",
