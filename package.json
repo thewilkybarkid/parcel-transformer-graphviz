@@ -1,6 +1,6 @@
 {
   "name": "parcel-transformer-graphviz",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Parcel transformer that turns Graphviz files into SVGs.",
   "license": "MIT",
   "repository": "github:thewilkybarkid/parcel-transformer-graphviz",
