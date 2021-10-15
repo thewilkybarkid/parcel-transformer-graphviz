@@ -17,7 +17,7 @@
     "parcel": "^2.0.0"
   },
   "dependencies": {
-    "@hpcc-js/wasm": "^1.10.3",
+    "@hpcc-js/wasm": "^1.12.4",
     "@parcel/plugin": "^2.0.0"
   },
   "devDependencies": {
