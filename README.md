@@ -16,8 +16,7 @@ Add the library to your `.parcelrc` file:
 {
   "extends": "@parcel/config-default",
   "transformers": {
-    "*.{dot,gv}": ["parcel-transformer-graphviz"],
-    "*.svg": ["@parcel/transformer-raw"]
+    "*.{dot,gv}": ["parcel-transformer-graphviz"]
   }
 }
 ```
