@@ -50,6 +50,7 @@ jobs:
         node:
           - 14
           - 16
+          - 17
 
     steps:
       - name: 'Checkout code'
