@@ -16,6 +16,9 @@
     "node": ">=14",
     "parcel": "^2.0.0"
   },
+  "workspaces": [
+    "test/project"
+  ],
   "dependencies": {
     "@hpcc-js/wasm": "^1.12.4",
     "@parcel/plugin": "^2.0.0"

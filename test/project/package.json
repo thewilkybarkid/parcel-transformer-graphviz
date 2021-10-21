@@ -1,12 +1,12 @@
 {
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "del-cli": "^4.0.1",
     "parcel": "^2.0.0",
     "parcel-transformer-graphviz": "file:../../"
   },
   "scripts": {
-    "build": "parcel build --no-cache --no-optimize test.gv",
+    "build": "parcel build --cache-dir .parcel-cache --no-cache --no-optimize test.gv",
     "clean": "del .parcel-cache dist"
   }
 }

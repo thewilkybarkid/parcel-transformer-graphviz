@@ -17,7 +17,7 @@ jobs:
       - name: 'Set up Node.js'
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
 
       - name: 'Install dependencies'
         run: npm ci
@@ -35,7 +35,7 @@ jobs:
       - name: 'Set up Node.js'
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
 
       - name: 'Install dependencies'
         run: npm ci
@@ -61,11 +61,12 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
+      - name: 'Update npm'
+        if: ${{ matrix.node == 14 }}
+        run: npm install --global npm@8
+
       - name: 'Install dependencies'
         run: npm ci
-
-      - name: 'Install test project dependencies'
-        run: npm --prefix test/project ci
 
       - name: 'Run tests'
         run: npm run test

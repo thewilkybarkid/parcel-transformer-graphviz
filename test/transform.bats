@@ -6,7 +6,7 @@ setup() {
 }
 
 transform-dot-to-svg() { # @test
-  run npm --prefix test/project run build
+  run npm --workspace test/project run build
 
   assert_output --partial 'dist/test.svg'
 
